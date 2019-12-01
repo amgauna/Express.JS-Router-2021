@@ -1,0 +1,2 @@
+# .gitingnore no GitHUB
+curl -o .gitignore https://raw.githubusercontent.com/github/gitignore/master/node.gitignore
