@@ -10,5 +10,5 @@ app.listen(port, console.log(`
 
   Servidor subiu com sucessinhos!
 
-  htttp://localhost:port )
+  htttp://localhost:3000 )
 )
