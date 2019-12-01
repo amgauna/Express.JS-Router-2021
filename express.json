@@ -3,12 +3,8 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req,res) => {
-
-  const dadoExterno = req.query.dadoExterno
-
-  const valorDoResponse = `Você me enviou: ${dadoExterno}`
-
-  res.send(valorDoResponse)
+  var express = require('express')
+  var app = express()
 })
 
 const port = 3000
