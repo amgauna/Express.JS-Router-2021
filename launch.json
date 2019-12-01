@@ -1,18 +1,35 @@
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "Launch Program",
-      "program": "${workspaceFolder}/index.js"
-    },
-    {
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "launch",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/lib/index.js",
+            "cwd": "${workspaceRoot}",
+            "env": {
+                "NODE_ENV": "local",
+                "theFox":"red",
+                "theDog":"brown"
+            }
+        },
+      {
       "type": "node",
       "request": "attach",
       "name": "Node Attach",
       "port": 9229
     },
-
-  ]
+        {
+            "name": "dev",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/lib/index.js",
+            "cwd": "${workspaceRoot}",
+            "env": {
+                "NODE_ENV": "development",
+                "theFox":"quick",
+                "theDog":"lazy"
+            }
+        }
+    ]
 }
