@@ -11,4 +11,5 @@
   "scripts": {
     "start": "node app.js"
   }
+  process.exit(1);
 }
