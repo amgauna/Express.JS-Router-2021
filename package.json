@@ -13,6 +13,7 @@
   }
 }
 
+
 {
   "name": "expert-js-stack",
   "version": "1.0.0",
@@ -22,5 +23,30 @@
     "start": "node index.js",
     "test": "jest --coverage --forceExit"
   },
+  }
+}
+
+
+{
+  "name" : "expert",
+  "description" : "Semantic Network mini-framework for  Node.js",
+  "version" : "0.3.3",
+  "license" : "BSD",
+  "repository": {"type": "git", "expert.git"},
+  "keywords" : [
+     "framework",
+     "ai"
+  ],
+  "dependencies" : {
+     "underscore" : "*"
+  },
+  "devDependencies" : {
+     "mocha" : "*",
+     "assert" : "*",
+     "groc" : "*"
+  },
+  "main" : "index",
+  "scripts" : {
+     "test" : "make test"
   }
 }
