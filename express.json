@@ -4,11 +4,4 @@ const app = express()
 
 app.get('/', (req,res) 
 
-const port = 3000
-
-app.listen(port, console.log(`
-
-  Servidor subiu com sucessinhos!
-
-  htttp://localhost:3000 )
-)
+app.listen(port, console.log(htttp://localhost:3000) )
