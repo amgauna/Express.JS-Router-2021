@@ -1,2 +1,5 @@
-# .gitingnore no GitHUB
-curl -o .gitignore https://raw.githubusercontent.com/github/gitignore/master/node.gitignore
+node_modules
+build
+npm-debug.log
+.env
+.DS_Store
