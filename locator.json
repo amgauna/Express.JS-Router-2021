@@ -2,7 +2,7 @@
   "name": "locator",
   "version": "1.0.0",
   "description": "Finds the country of origin of the incoming request",
-  "main": "index.js",
+  "main": "error.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
