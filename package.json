@@ -1,0 +1,32 @@
+{
+  "name": "locator",
+  "version": "1.0.0",
+  "description": "Finds the country of origin of the incoming request",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ip",
+    "geo",
+    "country"
+  ],
+  "author": "Sammy <sammy@your_domain> (https://your_domain)",
+  "license": "ISC"
+}
+
+{
+  "name": "wrap-with-poop",
+  "version": "0.1.0",
+  "description": "This package will take any string you give it and wrap it with the poop emjoi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "npm"
+  ],
+  "author": "Dan Vega",
+  "license": "MIT"
+}
