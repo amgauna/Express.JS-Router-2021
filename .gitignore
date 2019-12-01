@@ -1,1 +1,2 @@
-
+# .gitingnore no GitHUB
+curl -o .gitignore https://raw.githubusercontent.com/github/gitignore/master/MY_API_NAME.gitignore
