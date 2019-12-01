@@ -1,0 +1,11 @@
+{
+  "name": "expert-js-stack",
+  "version": "1.0.0",
+  "description": "EXPERT JS Stack",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest --coverage --forceExit"
+  },
+  }
+}
