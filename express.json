@@ -3,9 +3,6 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req,res) => {
-  var express = require('express')
-  var app = express()
-})
 
 const port = 3000
 
