@@ -15,4 +15,5 @@
       }
     }
   }
+  process.exit(1);
 }
