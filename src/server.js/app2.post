@@ -1,0 +1,14 @@
+// src/server.js/app.post
+
+// settings
+
+  app.post('/setting/:property/:value', (request, reply) => {
+    const { property, value } = request.params;
+    const user = getUser(request);
+    if (!isAdmin(user)) return reply.status(403).send(request.params);
+    const setting = value ? 1 : 0;
+    db.run(queries.set_settings, [property, setting], err => {
+      if (error(err, request, reply)) return;
+      reply.send({ status: 'ok' });
+    });
+  });
