@@ -1,0 +1,27 @@
+<html>
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">  </script>
+<script>
+      $(document).ready(function(){
+        var user,pass;
+        $("#submit").click(function(){
+          user=$("#user").val();
+          pass=$("#password").val();
+          $.post("http://localhost:3000/login",{user: user,password: pass}, function(data){
+            if(data === 'yes') {
+                alert("login success");
+              }
+          });
+        });
+      });
+    </script>
+</head>
+<body>
+<h1>Hello people !</h1>
+
+<input id="user" size="40" type="TEXT" />
+<input id="password" size="40" type="password" />
+<input id="submit" type="button" value="Submit" />
+
+</body>
+</html>
