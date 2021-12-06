@@ -1,0 +1,15 @@
+// metrics/server.js/api.post
+
+/*
+ * Post new meta data for metrics.
+ */
+ 
+api.post('/metrics/v2/:id', handler((req, res) => {
+ return Promise.map(plugins, plugin => {
+  const reporter = new plugin.Reporter(config[plugin.config]);
+  return reporter.ping()
+   .then(() => reporter.report(_.merge({}, req.body, {instance: req.params.id})))
+   .then(() => log.info('Reported to %s', plugin.name))
+   .then(() => reporter.close());
+ });
+}));
