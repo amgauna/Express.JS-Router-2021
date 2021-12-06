@@ -4,8 +4,9 @@
 </form>
 
 <string>
-  
+   
 // Using express
+app.use(express.urlencoded( {extended: true} ))   
 app.post('/somepath', function(req, res) {
     console.log(JSON.stringify(req.body));
     console.log('req.body.name', req.body['nome']);
@@ -18,5 +19,10 @@ req.param.name x
  
 // req.body.email would correspond with the HTML <input name="email"/> 
 function(req,res){ res.send(req.body); }   
+   
+app.post('/userlogin', (req, res) => {    
+   console.log(req.body) // object
+   var email = req.body.email;
+}
    
 </string>
