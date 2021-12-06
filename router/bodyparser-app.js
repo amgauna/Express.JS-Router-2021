@@ -10,11 +10,15 @@ var multipartMiddleware = multipart();
 
 const app = express();
 
+app.use(express.json());
+app.use(express.urlencoded());
+app.use(express.bodyParser());
+
 app.use(json);
 app.use(urlencode);
-app.use('/url/that/accepts/form-data', multipartMiddleware);
+app.use(multer({ dest: './uploads/' }));
 app.use(bodyParser.json()); // add a middleware (so that express can parse request.body's json)
-app.use(express.bodyParser());
+app.use('/url/that/accepts/form-data', multipartMiddleware);
 
 app.post('/api/courses', (request, response) => {
   response.json(request.body);
