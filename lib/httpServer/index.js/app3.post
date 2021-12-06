@@ -1,0 +1,13 @@
+// lib/httpServer/index.js/app.post
+
+this.app.post('/operator/wallets', (req, res) => {
+      let password = req.body.password;
+      if (R.match(/\w+/g, password).length <= 4) throw new HTTPError(400, 'Password must contain more than 4 words');
+
+      let newWallet = operator.createWalletFromPassword(password);
+
+      let projectedWallet = projectWallet(newWallet);
+
+      res.status(201).send(projectedWallet);
+    });
+    
