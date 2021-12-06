@@ -1,5 +1,6 @@
 <form action='/somepath' method='post'>
-   <input type='text' name='name'></input>
+   <input type='text' name='nome'>Nome:</input>
+   <input type='text' name='email'>Email:</input>
 </form>
 
 <string>
@@ -7,11 +8,15 @@
 // Using express
 app.post('/somepath', function(req, res) {
     console.log(JSON.stringify(req.body));
-    console.log('req.body.name', req.body['name']);
+    console.log('req.body.name', req.body['nome']);
+    console.log('req.body.name', req.body['email']);
 });
   
 // Output:
 {"name":"x","description":"x"}
 req.param.name x
-  
+ 
+// req.body.email would correspond with the HTML <input name="email"/> 
+function(req,res){ res.send(req.body); }   
+   
 </string>
