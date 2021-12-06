@@ -1,0 +1,17 @@
+// lib/httpServer/index.js/app.post
+
+this.app.post('/blockchain/transactions', (req, res) => {
+      let requestTransaction = Transaction.fromJson(req.body);
+      let transactionFound = blockchain.getTransactionById(requestTransaction.id);
+
+      if (transactionFound != null) throw new HTTPError(409, `Transaction '${requestTransaction.id}' already exists`);
+
+      try {
+        let newTransaction = blockchain.addTransaction(requestTransaction);
+        res.status(201).send(newTransaction);
+      } catch (ex) {
+        if (ex instanceof TransactionAssertionError) throw new HTTPError(400, ex.message, requestTransaction, ex);
+        else throw ex;
+      }
+    });
+    
