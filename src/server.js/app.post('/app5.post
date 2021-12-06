@@ -1,0 +1,5 @@
+// server.js/app.post
+
+app.post('/', async (req, res, next) => {
+ const {team} = req.body;
+ const timestamp = new Date();
