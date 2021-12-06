@@ -1,0 +1,12 @@
+<script>
+
+// src/server.js/app.post
+
+// for markdown preview
+
+  app.post('/markdown', (request, reply) => {
+    const { comment } = request.body;
+    reply.send({ html: marked(comment.trim()) });
+  });
+  
+ </script>
