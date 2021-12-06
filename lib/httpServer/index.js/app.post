@@ -1,0 +1,14 @@
+// lib/httpServer/index.js/app.post
+
+this.app.post('/miner/mine', (req, res, next) => {
+      miner.mine(req.body.rewardAddress, req.body['feeAddress'] || req.body.rewardAddress)
+        .then((newBlock) => {
+          newBlock = Block.fromJson(newBlock);
+          blockchain.addBlock(newBlock);
+          res.status(201).send(newBlock);
+        })
+        .catch((ex) => {
+          if (ex instanceof BlockAssertionError && ex.message.includes('Invalid index')) next(new HTTPError(409, 'A new block were added before we were able to mine one'), null, ex);
+          else next(ex);
+        });
+    });
