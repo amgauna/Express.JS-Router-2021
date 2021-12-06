@@ -1,0 +1,31 @@
+<form id="loginformA" action="userlogin" method="get">
+<div>
+    <label for="email">Email: </label>
+    <input type="text" id="email" name="email"></input>
+</div>
+<input type="submit" value="Submit"></input>  
+</form>
+
+<script>
+var app = require('express')();
+var http = require('http').Server(app);
+const fileUpload = require('express-fileupload')
+  
+app.use(express.json());
+app.use(express.urlencoded({ extended: true })) 
+  
+app.use(fileUpload());
+  
+app.post('/push/send', (request, response) => {
+  console.log(request.body)
+})  
+  
+app.post('/', function(req, res) {
+  var email = req.body.email;
+  res.send('<h1>Email :</h1> '+email);
+});
+
+http.listen(3000, function(){
+  console.log('Running Port:3000');
+});  
+</script>  
