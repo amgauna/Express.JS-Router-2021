@@ -1,7 +1,7 @@
 // Backend:
 
 import express from 'express';
-import bodyParser from 'body-parser';
+import bodyparser from 'body-parser';
 
 var urlencode = require('urlencode');
 var json = require('json-middleware');
@@ -10,14 +10,14 @@ var multipartMiddleware = multipart();
 
 const app = express();
 
-app.use(express.json()); 
-app.use(express.urlencoded()); 
+app.use(express.json()); //Used to parse JSON bodies
+app.use(express.urlencoded()); //Parse URL-encoded bodies
 app.use(express.bodyParser());
 
 app.use(json); // connect.json() handles application/json
 app.use(urlencode); // connect.urlencoded() handles application/x-www-form-urlencoded
 app.use(multer({ dest: './uploads/' })); // // multer() handles multipart/form-data
-app.use(bodyParser.json()); // add a middleware (so that express can parse request.body's json)
+app.use(bodyparser.json()); // add a middleware (so that express can parse request.body's json)
 app.use('/url/that/accepts/form-data', multipartMiddleware);
 
 app.post('/api/courses', (request, response) => {
