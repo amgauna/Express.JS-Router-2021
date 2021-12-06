@@ -95,29 +95,15 @@ app.put('/animals/:id', (req, res, next) => {
 });
 
 // Delete a single animal
-102
+
 app.delete('/animals/:id', (req, res, next) => {
-103
   const animalIndex = getIndexById(req.params.id, animals);
-104
   if (animalIndex !== -1) {
-105
     animals.splice(animalIndex, 1);
-106
-    res.status(204).send();
-107
-  } else {
-108
-    res.status(404).send();
-109
-  }
-110
+    res.status(204).send();} 
+  else { res.status(404).send(); }
 });
-111
-​
-112
+
 app.listen(PORT, () => {
-113
   console.log(`Server is listening on ${PORT}`);
-114
 });
