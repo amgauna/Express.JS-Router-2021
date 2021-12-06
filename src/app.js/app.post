@@ -1,4 +1,5 @@
-src/app.js/app.post
+// src/app.js/app.post
+
 app.post('/sms', (req, res) => {
 
   console.log('POST sms received');
