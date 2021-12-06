@@ -1,0 +1,17 @@
+<form action='/somepath' method='post'>
+   <input type='text' name='name'></input>
+</form>
+
+<string>
+  
+// Using express
+app.post('/somepath', function(req, res) {
+    console.log(JSON.stringify(req.body));
+    console.log('req.body.name', req.body['name']);
+});
+  
+// Output:
+{"name":"x","description":"x"}
+req.param.name x
+  
+</string>
