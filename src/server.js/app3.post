@@ -1,0 +1,17 @@
+// src/server.js/app.post
+
+// trust/block users or approve/reject comments
+
+  app.post(
+    /\/(?:comment\/(\d+)\/(approve|reject))|(?:user\/(\d+)\/(trust|block))/,
+    (request, reply) => {
+      const user = getUser(request);
+      if (!isAdmin(user)) return reply.status(403).send(request.params);
+      const action = request.params[1] || request.params[3];
+      const target_id = +(request.params[0] || request.params[2]);
+      db.run(queries[action], target_id, err => {
+        if (error(err, request, reply)) return;
+        reply.send({ status: 'ok' });
+      });
+    }
+  );
