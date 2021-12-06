@@ -1,0 +1,11 @@
+src/app.js/app.post
+app.post('/sms', (req, res) => {
+
+  console.log('POST sms received');
+
+  try {
+    bot.processMessage(req, res);
+  } catch (err) {
+    return res.status(400).send('Error while processing ' + err.message);
+  }
+});
