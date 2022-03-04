@@ -87,8 +87,8 @@ pela aplicação.
 * /assets/styles/
 
 O diretório <b>/scripts/</b> e o diretório <b>/env/</b> são relacionados a execução da aplicação e
-serão chamados por alguma linha de comando ou ferramenta externa, colocar eles em
-um diretório acessível facilita a usabilidade.
+serão chamados por alguma linha de comando ou ferramenta externa, colocar eles no diretório raiz 
+ROOT é acessível facilita a usabilidade.
 
 #### /scripts/
 * /scripts/deploy.sh
