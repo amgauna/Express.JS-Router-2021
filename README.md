@@ -35,33 +35,43 @@ O diretório /scripts/ e o diretório /env/ são relacionados a execução da ap
 serão chamados por alguma linha de comando ou ferramenta externa, colocar eles em
 um diretório acessível facilita a usabilidade.
 
-* /assets/
-* /assets/images/jpg/
-* /assets/images/gif/
-* /assets/images/png/
-* /assets/images/ico/
-* /assets/images/textures/
-* /assets/css/
-* /assets/js/
-* /assets/sass/
-* /assets/javascrips/
-* /assets/styles/
+### /assets/
 
-* /env/
+/assets/images/jpg/
+/assets/images/gif/
+/assets/images/png/
+/assets/images/ico/
+/assets/images/textures/
+/assets/css/
+/assets/js/
+/assets/sass/
+/assets/javascrips/
+/assets/styles/
+
+### /env/
+
 * /env/prod.env
 * /env/dev.env
 
-* /public/
+### /public
 
-* /scripts/
-* /scripts/deploy.sh
+/public/
 
-* /src/
+### /scripts/
+
+/scripts/deploy.sh
+
+### /src/
+
 * /src/controllers/
 * /src/middlewares/
 * /src/models/
 
-* /tests/
+### /tests/
+
+/tests/
+
+### arquivos localizados no diretório raiz ROOT
 
 * app.js
 * .gitignore
