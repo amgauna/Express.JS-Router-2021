@@ -19,6 +19,7 @@ Outros diretórios localizados no ROOT são scripts de suporte ou build, exemplo
 e arquivos estáticos.  Um padrão comum em diversas linguagens é colocar o código da aplicação
 em um diretório source normalmente chamado <b>/src/</b>.
 
+#### /srs/
 #### /src/controllers/
 #### /src/middlewares/
 #### /src/models/
@@ -39,18 +40,16 @@ O diretório <b>/public/</b> é responsável por guardar tudo aquilo que vai ser
 usuário, usar ele no ROOT facilita a criação de rotas de acesso e também a movimentação
 dos assets quando necessário.
 
-O diretório <b>/scripts/</b> e o diretório <b>/env/</b> são relacionados a execução da aplicação e
-serão chamados por alguma linha de comando ou ferramenta externa, colocar eles em
-um diretório acessível facilita a usabilidade.
+#### /public/
+#### /public/assets/
+#### /public/images/
+#### /public/css/
+#### /public/js/
 
-Separação da execução da aplicação. Os arquivos <b>app.js</b> e <b>server.js</b> devem ser mantidos 
-no diretório raiz ROOT, dessa maneira deixamos o <b>server.js</b> com a responsabilidade de
-chamar o <b>app.js</b> e iniciarmos a aplicação. Assim isolamos a aplicação da execução e
-deixamos que ela seja executada por quem chamar, nesse caso o <b>server.js</b>, mas poderia
-ser um <b>módulo</b> que vai fazer uma requisição <b>HTTP</b> para executar os testes e acessar rotas.
+No diretório <b>/assets/</b> guardamos os arquivos de imagens jpg, gif, png, ico, texturas, 
+arquivos javascripts, arquivos sass e arquivos styles css, que serão usadas na aplicação.
 
-### /assets/
-
+#### /assets/
 #### /assets/images/jpg/
 #### /assets/images/gif/
 #### /assets/images/png/
@@ -62,24 +61,24 @@ ser um <b>módulo</b> que vai fazer uma requisição <b>HTTP</b> para executar o
 #### /assets/javascrips/
 #### /assets/styles/
 
-### /env/
+O diretório <b>/scripts/</b> e o diretório <b>/env/</b> são relacionados a execução da aplicação e
+serão chamados por alguma linha de comando ou ferramenta externa, colocar eles em
+um diretório acessível facilita a usabilidade.
 
-#### /env/prod.env
-#### /env/dev.env
-
-### /public/
-
-#### /public/assets/
-#### /public/images/
-#### /public/css/
-#### /public/js/
-
-### /scripts/
-
+#### /scripts/
 #### /scripts/deploy.sh
 
 
-### Arquivos localizados no diretório raiz ROOT
+#### /env/
+#### /env/prod.env
+#### /env/dev.env
+
+
+Separação da execução da aplicação. Os arquivos <b>app.js</b> e <b>server.js</b> devem ser mantidos 
+no diretório raiz ROOT, dessa maneira deixamos o <b>server.js</b> com a responsabilidade de chamar o
+<b>app.js</b> e iniciarmos a aplicação. Assim isolamos a aplicação da execução e deixamos que ela seja
+executada por quem chamar, nesse caso o <b>server.js</b>, mas poderia ser um <b>módulo</b> que vai 
+fazer uma requisição <b>HTTP</b> para executar os testes e acessar rotas.
 
 #### app.js
 #### .gitignore
