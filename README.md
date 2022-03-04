@@ -1,10 +1,10 @@
 # Node.JS
 
-## Testando códigos Node.JS exemplo que estão dentro de livros que estou estudando.
+Testando códigos Node.JS exemplo que estão dentro de livros que estou estudando.
 
-## Tutorial Node.js (W3 Schools) = https://www.w3schools.com/nodejs/default.asp
+Tutorial Node.js (W3 Schools) = https://www.w3schools.com/nodejs/default.asp
 
-## -----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
 
 Node.JS / Express.JS/ Estrutura de diretórios e arquivos em Projetos. 
 
@@ -29,13 +29,13 @@ Dessa maneira o código da aplicação é isolado em um diretório deixando o RO
 acabando com a mistura de diretórios de código, com diretórios de testes, e diretórios de
 arquivos de configuração.
 
-## -----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
 
 # API Express.JS / Router Server
 
-### https://expressjs.com/pt-br/guide/routing.html
+https://expressjs.com/pt-br/guide/routing.html
 
-### https://expressjs.com/pt-br/4x/api.html
+https://expressjs.com/pt-br/4x/api.html
 
 ### https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/Introduction
 
