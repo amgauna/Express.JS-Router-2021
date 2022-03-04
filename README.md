@@ -35,6 +35,12 @@ O diretório /scripts/ e o diretório /env/ são relacionados a execução da ap
 serão chamados por alguma linha de comando ou ferramenta externa, colocar eles em
 um diretório acessível facilita a usabilidade.
 
+Separação da execução da aplicação. Os arquivos app.js e server.js devem ser mantidos 
+no diretório raiz ROOT, dessa maneira deixamos o server.js com a responsabilidade de
+chamar o app.js e iniciarmos a aplicação. Assim isolamos a aplicação da execução e
+deixamos que ela seja executada por quem chamar, nesse caso o server.js, mas poderia
+ser um módulo que vai fazer uma requisição HTTP para executar os testes e acessar rotas.
+
 ### /assets/
 
 #### /assets/images/jpg/
@@ -53,7 +59,7 @@ um diretório acessível facilita a usabilidade.
 #### /env/prod.env
 #### /env/dev.env
 
-### /public
+### /public/
 
 #### /public/assets/
 #### /public/images/
@@ -69,10 +75,12 @@ um diretório acessível facilita a usabilidade.
 #### /src/controllers/
 #### /src/middlewares/
 #### /src/models/
+#### /src/routes/
+#### /src/server/
 
 ### /tests/
 
-### arquivos localizados no diretório raiz ROOT
+### Arquivos localizados no diretório raiz ROOT
 
 #### app.js
 #### .gitignore
