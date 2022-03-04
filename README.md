@@ -11,7 +11,7 @@ Tutorial Node.js (W3 Schools) = https://www.w3schools.com/nodejs/default.asp
 ### Estrutura de diretórios e arquivos em Projetos. 
 
 O diretório ROOT do projeto é o ponto de entrada, ou seja, a primeira impressão. 
-No exemplo a seguir temos uma estrutura comum em aplicações usando o framework express.js 
+No exemplo a seguir temos uma estrutura comum em aplicações usando o <b>framework express.js</b> 
 Essa estrutura é legivel e organizada, mas tende a ficar muito grande e misturar diretórios
 de códigos com diretórios de teste, build, etc, conforme o crescimento da aplicação.
 
@@ -29,25 +29,25 @@ Dessa maneira o código da aplicação é isolado em um diretório deixando o RO
 acabando com a mistura de diretórios de código, com diretórios de testes, e diretórios de
 arquivos de configuração.
 
-Mantivemos fora o diretório /tests/ , o motivo disso é porque testes são executados ou 
-por linha de comando ou por outras ferramentas. Inclusive os ''tests runners'' como
-''mocha'' ou ''karma'' esperam que o diretório /tests/ seja o diretório principal.
+Mantivemos fora o diretório <b>/tests/</b>, o motivo disso é porque testes são executados ou 
+por linha de comando ou por outras ferramentas. Inclusive os <b>tests runners</b> como
+<b>mocha</b> ou <b>karma</b> esperam que o diretório <b>/tests/</b> seja o diretório principal.
 
 ### /tests/
 
-O diretório /public/ é responsável por guardar tudo aquilo que vai ser entregue para o
+O diretório <b>/public/</b> é responsável por guardar tudo aquilo que vai ser entregue para o
 usuário, usar ele no ROOT facilita a criação de rotas de acesso e também a movimentação
 dos assets quando necessário.
 
-O diretório /scripts/ e o diretório /env/ são relacionados a execução da aplicação e
+O diretório <b>/scripts/</b> e o diretório <b>/env/</b> são relacionados a execução da aplicação e
 serão chamados por alguma linha de comando ou ferramenta externa, colocar eles em
 um diretório acessível facilita a usabilidade.
 
-Separação da execução da aplicação. Os arquivos app.js e server.js devem ser mantidos 
-no diretório raiz ROOT, dessa maneira deixamos o server.js com a responsabilidade de
-chamar o app.js e iniciarmos a aplicação. Assim isolamos a aplicação da execução e
-deixamos que ela seja executada por quem chamar, nesse caso o server.js, mas poderia
-ser um módulo que vai fazer uma requisição HTTP para executar os testes e acessar rotas.
+Separação da execução da aplicação. Os arquivos <b>app.js</b> e <b>server.js</b> devem ser mantidos 
+no diretório raiz ROOT, dessa maneira deixamos o <b>server.js</b> com a responsabilidade de
+chamar o <b>app.js</b> e iniciarmos a aplicação. Assim isolamos a aplicação da execução e
+deixamos que ela seja executada por quem chamar, nesse caso o <b>server.js</b>, mas poderia
+ser um <b>módulo</b> que vai fazer uma requisição <b>HTTP</b> para executar os testes e acessar rotas.
 
 ### /assets/
 
