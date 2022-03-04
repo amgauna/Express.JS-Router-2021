@@ -34,7 +34,7 @@ Mantivemos fora o diretório <b>/tests/</b>, o motivo disso é porque testes sã
 por linha de comando ou por outras ferramentas. Inclusive os <b>tests runners</b> como
 <b>mocha</b> ou <b>karma</b> esperam que o diretório <b>/tests/</b> seja o diretório principal.
 
-### /tests/
+#### /tests/
 
 O diretório <b>/public/</b> é responsável por guardar tudo aquilo que vai ser entregue para o
 usuário, usar ele no ROOT facilita a criação de rotas de acesso e também a movimentação
