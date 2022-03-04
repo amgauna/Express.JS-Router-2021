@@ -17,16 +17,24 @@ de códigos com diretórios de teste, build, etc, conforme o crescimento da apli
 
 Outros diretórios localizados no ROOT são scripts de suporte ou build, exemplos, documentação
 e arquivos estáticos.  Um padrão comum em diversas linguagens é colocar o código da aplicação
-em um diretório source normalmente chamado /src/.
+em um diretório source normalmente chamado <b>/src/</b>.
+
+#### /src/controllers/
+#### /src/middlewares/
+#### /src/models/
+#### /src/routes/
+#### /src/server/
 
 Dessa maneira o código da aplicação é isolado em um diretório deixando o ROOT mais limpo e 
 acabando com a mistura de diretórios de código, com diretórios de testes, e diretórios de
 arquivos de configuração.
 
 Mantivemos fora o diretório /tests/ , o motivo disso é porque testes são executados ou 
- por linha de comando ou por outras ferramentas. Inclusive os ''tests runners'' como
- ''mocha'' ou ''karma'' esperam que o diretório /tests/ seja o diretório principal.
- 
+por linha de comando ou por outras ferramentas. Inclusive os ''tests runners'' como
+''mocha'' ou ''karma'' esperam que o diretório /tests/ seja o diretório principal.
+
+### /tests/
+
 O diretório /public/ é responsável por guardar tudo aquilo que vai ser entregue para o
 usuário, usar ele no ROOT facilita a criação de rotas de acesso e também a movimentação
 dos assets quando necessário.
@@ -70,15 +78,6 @@ ser um módulo que vai fazer uma requisição HTTP para executar os testes e ace
 
 #### /scripts/deploy.sh
 
-### /src/
-
-#### /src/controllers/
-#### /src/middlewares/
-#### /src/models/
-#### /src/routes/
-#### /src/server/
-
-### /tests/
 
 ### Arquivos localizados no diretório raiz ROOT
 
