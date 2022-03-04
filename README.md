@@ -63,6 +63,7 @@ O diretório <b>/public/</b> é responsável por guardar tudo aquilo que vai ser
 usuário, usar ele no ROOT facilita a criação de rotas de acesso e também a movimentação
 dos assets quando necessário.
 
+#### /public/
 * /public/assets/
 * /public/images/
 * /public/css/
