@@ -20,7 +20,6 @@ e arquivos estáticos.  Um padrão comum em diversas linguagens é colocar o có
 em um diretório source normalmente chamado <b>/src/</b>.
 
 #### /src/ com aplicativo mobile
-* /src/mobile/
 * /src/mobile/controllers/
 * /src/mobile/middlewares/
 * /src/mobile/models/
@@ -29,13 +28,24 @@ em um diretório source normalmente chamado <b>/src/</b>.
 * /src/mobile/index.js
 
 #### /src/ com aplicativo web
-* /src/web/
 * /src/web/controllers/
 * /src/web/middlewares/
 * /src/web/models/
 * /src/web/routes/
 * /src/web/server/
 * /src/web/index.js
+
+#### /src/ com aplicativos do lado cliente
+* /src/client/controllers/
+* /src/client/models/
+* /src/client/views/
+* /src/client/index.js
+
+#### /src/ com aplicativos do lado servidor
+* /src/server/controllers/
+* /src/server/models/
+* /src/server/views/
+* /src/server/index.js
 
 Dessa maneira o código da aplicação é isolado em um diretório deixando o ROOT mais limpo e 
 acabando com a mistura de diretórios de código, com diretórios de testes, e diretórios de
@@ -45,13 +55,14 @@ Mantivemos fora o diretório <b>/tests/</b>, o motivo disso é porque testes sã
 por linha de comando ou por outras ferramentas. Inclusive os <b>tests runners</b> como
 <b>mocha</b> ou <b>karma</b> esperam que o diretório <b>/tests/</b> seja o diretório principal.
 
-#### /tests/
+* /config/
+* /docs/
+* /tests/
 
 O diretório <b>/public/</b> é responsável por guardar tudo aquilo que vai ser entregue para o
 usuário, usar ele no ROOT facilita a criação de rotas de acesso e também a movimentação
 dos assets quando necessário.
 
-#### /public/
 * /public/assets/
 * /public/images/
 * /public/css/
