@@ -25,7 +25,8 @@ source normalmente chamado src.
 * package.json
 * server.js
 
-Dessa maneira o código da aplicação é isolado em um diretório deixando o ROOT mais limpo e acabando com a mistura de diretórios de código, com diretórios de testes, e diretórios de
+Dessa maneira o código da aplicação é isolado em um diretório deixando o ROOT mais limpo e 
+acabando com a mistura de diretórios de código, com diretórios de testes, e diretórios de
 arquivos de configuração.
 
 -----------------------------------------------------------------------------------------
