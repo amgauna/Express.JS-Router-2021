@@ -6,7 +6,9 @@ Tutorial Node.js (W3 Schools) = https://www.w3schools.com/nodejs/default.asp
 
 -----------------------------------------------------------------------------------------
 
-Node.JS / Express.JS/ Estrutura de diretórios e arquivos em Projetos. 
+## Node.JS / Express.JS 
+
+### Estrutura de diretórios e arquivos em Projetos. 
 
 O diretório ROOT do projeto é o ponto de entrada, ou seja, a primeira impressão. 
 No exemplo a seguir temos uma estrutura comum em aplicações usando o framework express.js 
