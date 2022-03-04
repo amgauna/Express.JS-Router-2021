@@ -37,46 +37,47 @@ um diretório acessível facilita a usabilidade.
 
 ### /assets/
 
-/assets/images/jpg/
-/assets/images/gif/
-/assets/images/png/
-/assets/images/ico/
-/assets/images/textures/
-/assets/css/
-/assets/js/
-/assets/sass/
-/assets/javascrips/
-/assets/styles/
+#### /assets/images/jpg/
+#### /assets/images/gif/
+#### /assets/images/png/
+#### /assets/images/ico/
+#### /assets/images/textures/
+#### /assets/css/
+#### /assets/js/
+#### /assets/sass/
+#### /assets/javascrips/
+#### /assets/styles/
 
 ### /env/
 
-* /env/prod.env
-* /env/dev.env
+#### /env/prod.env
+#### /env/dev.env
 
 ### /public
 
-/public/
+#### /public/assets/
+#### /public/images/
+#### /public/css/
+#### /public/js/
 
 ### /scripts/
 
-/scripts/deploy.sh
+#### /scripts/deploy.sh
 
 ### /src/
 
-* /src/controllers/
-* /src/middlewares/
-* /src/models/
+#### /src/controllers/
+#### /src/middlewares/
+#### /src/models/
 
 ### /tests/
 
-/tests/
-
 ### arquivos localizados no diretório raiz ROOT
 
-* app.js
-* .gitignore
-* package.json
-* server.js
+#### app.js
+#### .gitignore
+#### package.json
+#### server.js
  
 -----------------------------------------------------------------------------------------
 
