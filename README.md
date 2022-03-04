@@ -6,6 +6,23 @@
 
 ## -----------------------------------------------------------------------------------------
 
+Node.JS / Express.JS/ Estrutura de diretórios e arquivos em Projetos. 
+
+O diretório ROOT do projeto é o ponto de entrada, ou seja, a primeira impressão. 
+No exemplo a seguir temos uma estrutura comum em aplicações usando o framework express.js 
+Essa estrutura é legivel e organizada, mas tende a ficar muito grande e misturar diretórios
+de códigos com diretórios de teste, build, etc, conforme o crescimento da aplicação.
+
+* /controllers/
+* /middlewares/
+* /models/
+* /tests/
+* .gitignore
+* app.js
+* package.json
+
+## -----------------------------------------------------------------------------------------
+
 # API Express.JS / Router Server
 
 ### https://expressjs.com/pt-br/guide/routing.html
