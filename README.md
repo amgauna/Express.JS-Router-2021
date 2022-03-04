@@ -15,15 +15,43 @@ No exemplo a seguir temos uma estrutura comum em aplicações usando o framework
 Essa estrutura é legivel e organizada, mas tende a ficar muito grande e misturar diretórios
 de códigos com diretórios de teste, build, etc, conforme o crescimento da aplicação.
 
-Um padrão comum em diversas linguagens é colocar o código da aplicação em um diretório
-source normalmente chamado src.
+Outros diretórios localizados no ROOT são scripts de suporte ou build, exemplos, documentação
+e arquivos estáticos.  Um padrão comum em diversas linguagens é colocar o código da aplicação
+em um diretório source normalmente chamado /src/.
+
 Dessa maneira o código da aplicação é isolado em um diretório deixando o ROOT mais limpo e 
 acabando com a mistura de diretórios de código, com diretórios de testes, e diretórios de
 arquivos de configuração.
 
+Mantivemos fora o diretório /tests/ , o motivo disso é porque testes são executados ou 
+ por linha de comando ou por outras ferramentas. Inclusive os ''tests runners'' como
+ ''mocha'' ou ''karma'' esperam que o diretório /tests/ seja o diretório principal.
+ 
+O diretório /public/ é responsável por guardar tudo aquilo que vai ser entregue para o
+usuário, usar ele no ROOT facilita a criação de rotas de acesso e também a movimentação
+dos assets quando necessário.
+
+O diretório /scripts/ e o diretório /env/ são relacionados a execução da aplicação e
+serão chamados por alguma linha de comando ou ferramenta externa, colocar eles em
+um diretório acessível facilita a usabilidade.
+
+* /assets/
+* /assets/images/jpg/
+* /assets/images/gif/
+* /assets/images/png/
+* /assets/images/ico/
+* /assets/images/textures/
+* /assets/css/
+* /assets/js/
+* /assets/sass/
+* /assets/javascrips/
+* /assets/styles/
+
 * /env/
 * /env/prod.env
 * /env/dev.env
+
+* /public/
 
 * /scripts/
 * /scripts/deploy.sh
@@ -39,16 +67,7 @@ arquivos de configuração.
 * .gitignore
 * package.json
 * server.js
-
- Mantivemos fora o diretório /tests/ , o motivo disso é porque testes são executados ou 
- por linha de comando ou por outras ferramentas. Inclusive os ''tests runners'' como
- ''mocha'' ou ''karma'' esperam que o diretório /tests/ seja o diretório principal.
  
- * /tests/
- 
- 
- 
-
 -----------------------------------------------------------------------------------------
 
 ## API Express.JS
