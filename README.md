@@ -46,8 +46,10 @@ dos assets quando necessário.
 #### /public/css/
 #### /public/js/
 
-No diretório <b>/assets/</b> guardamos os arquivos de imagens jpg, gif, png, ico, texturas, 
-arquivos javascripts, arquivos sass e arquivos styles css, que serão usadas na aplicação.
+O diretório <b>/assets/</b> é buscado por diversas ferramentas e módulos de sistemas, e por
+isso devemos guardar os arquivos de <b>imagens jpg, gif, png, ico, texturas</b>, arquivos 
+<b>javascripts</b>, arquivos <b>sass</b> e arquivos <b>styles.css</b>, que serão utilizados 
+pela aplicação.
 
 #### /assets/
 #### /assets/images/jpg/
@@ -68,11 +70,9 @@ um diretório acessível facilita a usabilidade.
 #### /scripts/
 #### /scripts/deploy.sh
 
-
 #### /env/
 #### /env/prod.env
 #### /env/dev.env
-
 
 Separação da execução da aplicação. Os arquivos <b>app.js</b> e <b>server.js</b> devem ser mantidos 
 no diretório raiz ROOT, dessa maneira deixamos o <b>server.js</b> com a responsabilidade de chamar o
