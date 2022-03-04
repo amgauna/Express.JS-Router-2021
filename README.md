@@ -21,30 +21,30 @@ Dessa maneira o código da aplicação é isolado em um diretório deixando o RO
 acabando com a mistura de diretórios de código, com diretórios de testes, e diretórios de
 arquivos de configuração.
 
-/env/
-/env/prod.env
-/env/dev.env
+* /env/
+* /env/prod.env
+* /env/dev.env
 
-/scripts/
-/scripts/deploy.sh
+* /scripts/
+* /scripts/deploy.sh
 
-/src/
-/src/controllers/
-/src/middlewares/
-/src/models/
+* /src/
+* /src/controllers/
+* /src/middlewares/
+* /src/models/
 
-/tests/
+* /tests/
 
-app.js
-.gitignore
-package.json
-server.js
+* app.js
+* .gitignore
+* package.json
+* server.js
 
  Mantivemos fora o diretório /tests/ , o motivo disso é porque testes são executados ou 
  por linha de comando ou por outras ferramentas. Inclusive os ''tests runners'' como
  ''mocha'' ou ''karma'' esperam que o diretório /tests/ seja o diretório principal.
  
- /tests/
+ * /tests/
  
  
  
