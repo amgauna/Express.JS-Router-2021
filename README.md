@@ -19,12 +19,14 @@ Outros diretórios localizados no ROOT são scripts de suporte ou build, exemplo
 e arquivos estáticos.  Um padrão comum em diversas linguagens é colocar o código da aplicação
 em um diretório source normalmente chamado <b>/src/</b>.
 
-#### /srs/
-#### /src/controllers/
-#### /src/middlewares/
-#### /src/models/
-#### /src/routes/
-#### /src/server/
+#### /src/
+* /src/mobile/
+** /src/mobile/controllers/
+** /src/mobile/middlewares/
+** /src/mobile/models/
+** /src/mobile/routes/
+** /src/mobile/server/
+** /src/mobile/index.js
 
 Dessa maneira o código da aplicação é isolado em um diretório deixando o ROOT mais limpo e 
 acabando com a mistura de diretórios de código, com diretórios de testes, e diretórios de
