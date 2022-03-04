@@ -28,7 +28,7 @@ em um diretório source normalmente chamado <b>/src/</b>.
 * /src/mobile/server/
 * /src/mobile/index.js
 
-#### /src com aplicativo web
+#### /src/ com aplicativo web
 * /src/web/
 * /src/web/controllers/
 * /src/web/middlewares/
