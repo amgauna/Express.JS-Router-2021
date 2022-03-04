@@ -1,8 +1,8 @@
-# Express.JS
+# Testando códigos exemplo que estão dentro de livros que eu estou estudando
 
-## Node Express Router Server / API Express.JS
+## Node JS / API Express JS / JS Router Server 
 
-## Tutorial de configuração
+## Tutorial Node.js (W3 Schools) = https://www.w3schools.com/nodejs/default.asp
 
 ### https://www.tabnine.com/code/javascript/functions/express/Express/post
 
