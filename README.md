@@ -12,14 +12,22 @@ O diretório ROOT do projeto é o ponto de entrada, ou seja, a primeira impress�
 No exemplo a seguir temos uma estrutura comum em aplicações usando o framework express.js 
 Essa estrutura é legivel e organizada, mas tende a ficar muito grande e misturar diretórios
 de códigos com diretórios de teste, build, etc, conforme o crescimento da aplicação.
+Um padrão comum em diversas linguagens é colocar o código da aplicação em um diretório
+source normalmente chamado src.
 
-* /controllers/
-* /middlewares/
-* /models/
+* /src/
+* /src/controllers/
+* /src/middlewares/
+* /src/models/
 * /tests/
-* .gitignore
 * app.js
+* .gitignore
 * package.json
+* server.js
+
+Dessa maneira o código da aplicação é isolado em um diretório deixando o ROOT mais limpo e 
+acabando com a mistura de diretórios de código, com diretórios de testes, e diretórios de
+arquivos de configuração.
 
 ## -----------------------------------------------------------------------------------------
 
